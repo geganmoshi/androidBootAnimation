@@ -39,23 +39,23 @@ android change boot animation
         }<br> 
     }<br> 
     
-    
-     if (copyFile( "your file path", "/data/local/bootanimation.zip")) {<br> 
-                        BufferedWriter bufferedwriter = null;<br> 
-                        try {
-                            bufferedwriter = new BufferedWriter(new FileWriter("/data/my_fifo"));<br> 
-                            bufferedwriter.write("replace_bootanimation");<br> 
-                            bufferedwriter.flush();<br> 
-                            bufferedwriter.close();<br> 
-                        } catch (IOException e) {<br> 
-                            File file_ = new File(requestUrl.upgrade_path<br> 
-                                    + "/bootanimation.zip");<br> 
-                            if (file_.exists()) {<br> 
-                                file_.delete();<br> 
-                            }<br> 
-                            initPictureHandler.getInstance(getApplication()).clear();<br> 
-                            e.printStackTrace();<br> 
-                        }<br> 
-                    }<br> 
+    执行copyFile方法
+    if (copyFile( "your file path", "/data/local/bootanimation.zip")) {<br> 
+                       BufferedWriter bufferedwriter = null;<br> 
+                       try {
+                           bufferedwriter = new BufferedWriter(new FileWriter("/data/my_fifo"));<br> 
+                           bufferedwriter.write("replace_bootanimation");<br> 
+                           bufferedwriter.flush();<br> 
+                           bufferedwriter.close();<br> 
+                       } catch (IOException e) {<br> 
+                           File file_ = new File(requestUrl.upgrade_path<br> 
+                                   + "/bootanimation.zip");<br> 
+                           if (file_.exists()) {<br> 
+                               file_.delete();<br> 
+                           }<br> 
+                           initPictureHandler.getInstance(getApplication()).clear();<br> 
+                           e.printStackTrace();<br> 
+                       }<br> 
+                   }<br> 
   执行成功后开机重启
                     
