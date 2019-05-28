@@ -4,12 +4,13 @@ android change boot animation
 安卓替换开机动画
 
 1. 制作动画：打开下面链接根据教程制作好动画文件
+
  https://blog.csdn.net/u010753159/article/details/51356331
  
 2. 将制作好的文件添加到压缩文件，压缩文件格式.zip,压缩方式存储，文件名bootanimation
 
 3. 执行替换方法
- public Boolean copyFile(String oldPath, String newPath) {
+ public Boolean copyFile(String oldPath, String newPath) { \n
         try {
             int bytesum = 0;
             int byteread = 0;
