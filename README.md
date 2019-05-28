@@ -10,16 +10,16 @@ android change boot animation
 2. 将制作好的文件添加到压缩文件，压缩文件格式.zip,压缩方式存储，文件名bootanimation
 
 3. 执行替换方法
- public Boolean copyFile(String oldPath, String newPath) { \n
-        try {
-            int bytesum = 0;
-            int byteread = 0;
-            File oldfile = new File(oldPath);
-            if (oldfile.exists()) { //文件存在时
-                InputStream inStream = new FileInputStream(oldPath); //读入原文件
-                FileOutputStream fs = new FileOutputStream(newPath);
-                byte[] buffer = new byte[8192];
-                while ((byteread = inStream.read(buffer)) != -1) {
+ public Boolean copyFile(String oldPath, String newPath) { <br> 
+        try {<br> 
+            int bytesum = 0;<br> 
+            int byteread = 0;<br> 
+            File oldfile = new File(oldPath);<br> 
+            if (oldfile.exists()) { //文件存在时<br> 
+                InputStream inStream = new FileInputStream(oldPath); //读入原文件<br> 
+                FileOutputStream fs = new FileOutputStream(newPath);<br> 
+                byte[] buffer = new byte[8192];<br> 
+                while ((byteread = inStream.read(buffer)) != -1) {<br> 
                     bytesum += byteread; //字节数 文件大小
                     fs.write(buffer, 0, byteread);
                 }
