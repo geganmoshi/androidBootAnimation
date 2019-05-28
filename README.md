@@ -39,7 +39,7 @@ android change boot animation
         }<br> 
     }<br> 
     
-    执行copyFile方法
+    执行copyFile方法<br> 
     if (copyFile( "your file path", "/data/local/bootanimation.zip")) {<br> 
                        BufferedWriter bufferedwriter = null;<br> 
                        try {
