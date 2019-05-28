@@ -11,12 +11,12 @@ android change boot animation
 
 3. 执行替换方法<br> 
  public Boolean copyFile(String oldPath, String newPath) { <br> 
-        >>try {<br> 
-            >>>>int bytesum = 0;<br> 
-            >>>>int byteread = 0;<br> 
-            >>>>File oldfile = new File(oldPath);<br> 
-            >>>>if (oldfile.exists()) { //文件存在时<br> 
-                >>>>InputStream inStream = new FileInputStream(oldPath); //读入原文件<br> 
+        try {<br> 
+            int bytesum = 0;<br> 
+            int byteread = 0;<br> 
+            File oldfile = new File(oldPath);<br> 
+            if (oldfile.exists()) { //文件存在时<br> 
+                InputStream inStream = new FileInputStream(oldPath); //读入原文件<br> 
                 FileOutputStream fs = new FileOutputStream(newPath);<br> 
                 byte[] buffer = new byte[8192];<br> 
                 while ((byteread = inStream.read(buffer)) != -1) {<br> 
